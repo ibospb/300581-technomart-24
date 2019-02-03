@@ -11,7 +11,7 @@
         <div class="search">
           <form action="https://echo.htmlacademy.ru" method="get">
             <label for="search-text">поиск</label>
-            <input id="search-text" name="search-text" type="text" placeholder="Поиск:">
+            <input id="search-text" name="search-text" type="search" placeholder="Поиск:">
             <button type="submit">Найти</button>
           </form>
         </div>
@@ -119,7 +119,24 @@
     </footer>
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <!-- Здесь будет форма -->
+      <!-- форма обратной связи -->
+      <form class="feedback" action="https://echo.htmlacademy.ru" method="get">
+        <ul>
+          <li class="feedback-name">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+          </li>
+          <li class="feedback-email">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="email@example.com" required>
+          </li>
+          <li class="feedback-text">
+            <label for="text-feedback">Текст письма:</label>
+            <textarea name="text-feedback" id="text-feedback" placeholder="В свободной форме" required></textarea>
+          </li>
+        </ul>
+        <button type="submit" name="button">Отправить</button>
+      </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="modal modal-map">

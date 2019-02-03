@@ -7,11 +7,11 @@
   <body>
     <header>
       <div class="main-header">
-        <a class="logo logo-header">Техномарт</a>
+        <a href="index.html" class="logo logo-header">Техномарт</a>
         <div class="search">
           <form action="https://echo.htmlacademy.ru" method="get">
             <label for="search-text">поиск</label>
-            <input id="search-text" name="search-text" type="text" placeholder="Поиск:">
+            <input id="search-text" name="search-text" type="search" placeholder="Поиск:">
             <button type="submit">Найти</button>
           </form>
         </div>
@@ -63,7 +63,35 @@
       <h2>Перфораторы</h2>
       <section class="catalog-filter">
         <h3>Фильтр:</h3>
-          <!-- Форма фильтра-->
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Цена:</legend>
+            <span></span>
+            <label class="visually-hidden">от <input type="number" min="0" name="price-min"></label>
+            <label class="visually-hidden">до <input type="number" min="0" name="price-max"></label>
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <input type="checkbox" id="vendor-bosch" name="bosch" checked>
+            <label for="vendor-bosch">Bosch</label>
+            <input type="checkbox" id="vendor-interskol" name="интерскол">
+            <label for="vendor-interskol">Интерскол</label>
+            <input type="checkbox" id="vendor-makita" name="makita" checked>
+            <label for="vendor-makita">Makita</label>
+            <input type="checkbox" id="vendor-dewalt" name="dewalt">
+            <label for="vendor-dewalt">Dewalt</label>
+            <input type="checkbox" id="vendor-hitachi" name="hitachi">
+            <label for="vendor-hitachi">Hitachi</label>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <input type="radio" id="battery" name="filter-power" value="battery" checked>
+            <label for="battery">Аккумуляторные</label>
+            <input type="radio" id="wire" name="filter-power" value="wire">
+            <label for="wire">Проводные</label>
+          </fieldset>
+          <button type="submit" name="button">Показать</button>
+        </form>
       </section>
       <section class="catalog">
         <div class="catalog-sort">
@@ -186,7 +214,7 @@
       </section>
     </main>
     <footer>
-      <a class="logo logo-footer">Техномарт</a>
+      <a href="index.html" class="logo logo-footer">Техномарт</a>
       <section class="footer-navigation">
         <h2 class="visually-hidden">Быстрая навигация</h2>
         <ul class="footer-navigation-top">
@@ -225,11 +253,6 @@
           <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
     </footer>
-    <section class="modal modal-feedback">
-      <h2 class="visually-hidden">Обратная связь</h2>
-      <!-- Здесь будет форма -->
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
     <section class="modal modal-addcart">
       <h2 class="visually-hidden">Оформить заказ?</h2>
       <p>Товар добавлен в корзину!</p>
