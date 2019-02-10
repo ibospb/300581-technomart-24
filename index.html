@@ -9,7 +9,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class="container">
       <div class="main-header">
         <a class="logo logo-header">
           <img src="img/logo.png" width="220" height="47" alt="Логотип Техномарт">
@@ -34,14 +34,14 @@
         <section class="contact-header">
           <h2 class="visually-hidden">Контактная информация</h2>
           <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          <a href="tel:+78125550555">7(812)555-05-55</a>
+          <a href="tel:+78125550555">+7(812)555-05-55</a>
         </section>
         <section class="user-menu">
           <h2 class="visually-hidden">Авторизация</h2>
             <div class="user-menu-unlogged">
             <ul>
-              <li><a class="login" href="login.html">Войти</a></li>
-              <li><a class="reg" href="join.html">Регистрация</a></li>
+              <li><a class="btn login" href="login.html">Войти</a></li>
+              <li><a class="btn reg" href="join.html">Регистрация</a></li>
             </ul>
           </div>
         </section>
@@ -72,7 +72,7 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="company.html">Подробнее о компании</a>
+        <a class="btn" href="company.html">Подробнее о компании</a>
       </section>
       <section class="map">
         <h2>Контакты</h2>
@@ -80,10 +80,10 @@
         <a href="#">
           <img src="img/map-small.jpg" width="300" height="160" alt="Мы на карте">
         </a>
-        <a class="btn btn-feedback" href="#">Заблудились? Напишите нам!</a>
+        <p><a class="btn btn-feedback" href="#">Заблудились? Напишите нам!</a></p>
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <a class="logo logo-footer">
         <img src="img/logo-footer.png" width="220" height="68" alt="Логотип Техномарт">
       </a>
@@ -108,6 +108,7 @@
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         <a href="tel:+78125550555">7(812)555-05-55</a>
       </section>
+      <div class="container">
         <p class="footer-copyright">© 2010–2017 Компания «Техномарт» Все права защищены</p>
         <div class="footer-social">
           <ul>
@@ -124,6 +125,7 @@
           <b>Разработано —</b>
           <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
+      </div>
     </footer>
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
