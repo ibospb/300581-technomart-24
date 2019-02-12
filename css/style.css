@@ -354,6 +354,10 @@ a {
   line-height: 20px;
 }
 
+.catalog-filter fieldset {
+  border: none;
+}
+
 .catalog-filter .btn {
   text-transform: uppercase;
   border: 1px solid #e5e5e5;
