@@ -303,3 +303,196 @@ a {
   background-color: inherit;
   text-decoration: underline;
 }
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  text-transform: uppercase;
+  color: inherit;
+  background-color: inherit;
+  line-height: 18px;
+}
+
+.catalog-title {
+  font-family: "Cuprum", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.catalog-filter ul {
+  list-style: none;
+}
+
+.catalog-filter {
+  text-transform: uppercase;
+}
+
+.catalog-filter h3 {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+
+  background-color: #f7f3ec;
+  color: inherit;
+}
+
+.catalog-filter legend {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+
+}
+
+.catalog-filter label {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.catalog-filter .btn {
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+
+  background-color: #ffffff;
+  color: inherit;
+}
+
+.catalog-sort ul {
+  list-style: none;
+}
+
+.catalog-sort {
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+  color: inherit;
+}
+
+.catalog-sort h3 {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.catalog-sort a {
+  font-size: 13px;
+  line-height: 18px;
+  border-bottom: 1px dotted #ee3643;
+
+  color: #c5c5c5;
+  background-color: inherit;
+}
+
+.catalog-sort a:hover {
+  border-bottom: 1px solid #ee3643;
+  color: inherit;
+  background-color: inherit;
+}
+
+.catalog-sort a:active {
+  color: #ee3643;
+  background-color: inherit;
+}
+
+.catalog-sort .sort-active {
+  color: #ee3643;
+  background-color: inherit;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item h4 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.catalog-item .old-price,
+.catalog-item .price {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.catalog-item .old-price {
+  color:#999999;
+  background-color: inherit;
+  text-decoration: line-through;
+}
+
+.catalog-item .price {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.catalog-item .btn {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  text-align: center;
+
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.catalog-item .btn-addcart {
+  color: #ffffff;
+  background-color: #63a63e;
+  border: 3px solid #367315;
+  border-radius: 2px;
+}
+
+.catalog-item .btn-addcart:hover {
+  color: #ffffff;
+  background-color: #5fbb2d;
+  border: 3px solid #367315;
+  border-radius: 2px;
+}
+
+.catalog-item .btn-addcart:active {
+  color: #ffffff;
+  background-color: #518534;
+  border: 3px solid #367315;
+  border-radius: 2px;
+}
+
+.catalog-item .btn-addbookmarks {
+  color: #32425c;
+  background-color: #ffffff;
+  border: 3px solid #367315;
+  border-radius: 2px;
+}
+
+.catalog-item .btn-addbookmarks:hover {
+  color: #32425c;
+  background-color: inherit;
+  border: 3px solid #32425c;
+  border-radius: 2px;
+}
+
+.catalog-item .btn-addbookmarks:active {
+  color: #c1c6ce;
+  background-color: inherit;
+  border: 3px solid #c1c6ce;
+  border-radius: 2px;
+}
+
+.doyouknow {
+  background-color: #f2f6f8;
+  color: #000000;
+}
+
+.doyouknow h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
