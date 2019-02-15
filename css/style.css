@@ -1,9 +1,9 @@
 body {
   margin: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 24px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
   font-weight: 400;
   color: #000000;
 
@@ -19,18 +19,26 @@ a {
 }
 
 .container {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-weight: 400;
   background-color: #f4f7f9;
-  color: #000000;
 }
 
 .main-header {
-  font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-
   background-color: #293449;
+}
+
+.logo img,
+.logo-header img {
+  background-color: #ee3643;
+}
+
+.logo-header img:hover{
+  background-color: #ca2c37;
+}
+
+.logo-header img:active {
+  background-color: #ba2732;
 }
 
 .user-navigation ul {
@@ -39,34 +47,29 @@ a {
 
 .bookmarks,
 .basket {
-  color: #ffffff;
-  background-color: #293449;
-}
-
-.order {
-  color: #ffffff;
-  background-color: #63a63e;
+  color: inherit;
 }
 
 .bookmarks:hover,
 .basket:hover {
-  color: #ffffff;
   background-color: #212a3a;
 }
 
 .bookmarks:active,
 .basket:active {
-  color: #ffffff;
   background-color: #161d29;
 }
 
+.order {
+  color: inherit;
+  background-color: #63a63e;
+}
+
 .order:hover {
-  color: #ffffff;
   background-color: #5fbb2d;
 }
 
 .order:active {
-  color: #ffffff;
   background-color: #518534;
 }
 
@@ -76,61 +79,51 @@ a {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
-
-  background-color: #f4f7f9;
 }
 
 .contact-header address {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
-
-  background-color: #f4f7f9;
 }
 
 .contact-header a {
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
-
-  background-color: #f4f7f9;
 }
 
 .user-menu-unlogged .btn,
 .user-menu-logged .btn {
   list-style: none;
   font-size: 21px;
-}
-
-.user-menu-unlogged .btn,
-.user-menu-logged .btn {
-  background-color: #ffffff;
+  line-height: 21px;
   color: #000000;
+  background-color: #ffffff;
 }
 
 .user-menu-unlogged .btn:hover {
-  background-color: #ffffff;
   color: #ee3643;
 }
 
 .user-menu-unlogged .btn:active {
-  background-color: #ffffff;
   color: #b2b2b2;
 }
 
 .user-menu-logged .user-name {
-  background-color: #ffffff;
   color: #000000;
 }
 
 .user-menu-logged .user-name:hover {
-  background-color: #ffffff;
   color: #000000;
 }
 
 .user-menu-logged .user-name:active {
-  background-color: #ffffff;
   color: #c5c5c5;
+}
+
+.user-menu-logged ul {
+  list-style: none;
 }
 
 .user-menu-logged a {
@@ -138,34 +131,29 @@ a {
   line-height: 18px;
   color: #32425c;
   background-color: #f4f7f9;
+}
+
+.user-menu-list a:hover {
+  color: #ee3643;
   text-decoration: underline;
 }
 
-.user-menu-logged a:hover {
-  color: #ee3643;
-  background-color: #f4f7f9;
-}
-
-.user-menu-logged a:active {
+.user-menu-list a:active {
   color: #c5c5c5;
-  background-color: #f4f7f9;
+  text-decoration: underline;
 }
 
 .site-navigation {
   list-style: none;
-  font-size: 17px;
-  line-height: 17px;
   color: #ffffff;
   background-color: #32425c;
 }
 
 .site-navigation a {
   color: #ffffff;
-  background-color: #32425c;
 }
 
 .site-navigation a:hover {
-  color: #ffffff;
   background-color: #293449;
 }
 
@@ -174,23 +162,21 @@ a {
   background-color: #293449;
 }
 
-.about-company h2 {
-  font-family: "Cuprum", Arial, sans-serif;
+.about-company h2,
+.map h2 {
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
-  font-weight: 400;
-  color: #000000;
-
-  background-color: #ffffff;
 }
 
-.about-company p {
+.about-company p,
+.map p {
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
 .about-company .logistic {
-  font-family: "Cuprum", Arial, sans-serif;
   list-style: none;
   font-size: 18px;
   line-height: 20px;
@@ -198,81 +184,66 @@ a {
 
 .about-company .btn,
 .map .btn {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   background-color: #ee3643;
+  text-transform: uppercase;
 }
 
 .about-company .btn:hover,
 .map .btn:hover {
-  color: #ffffff;
   background-color: #ca2c37;
 }
 
 .about-company .btn:active,
 .map .btn:active {
-  color: #ffffff;
   background-color: #ba2732;
 }
 
 .main-footer {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   background-color: #32425c;
-  color: #ffffff;
+  color: #f1f5f7;
 }
 
 .footer-navigation ul {
   list-style: none;
 }
 
-.footer-navigation-top a {
-  color: #f1f5f7;
-  background-color: inherit;
+.footer-navigation a:hover {
+  text-decoration: underline;
 }
 
-.footer-navigation-top a:hover {
-  text-decoration: underline;
+.footer-navigation-top a {
   color: #f1f5f7;
-  background-color: inherit;
 }
 
 .footer-navigation-top a:active {
-  text-decoration: underline;
   color: #929caa;
-  background-color: inherit;
 }
 
 .footer-navigation-bottom a {
   color: #ffd180;
-  background-color: inherit;
-}
-
-.footer-navigation-bottom a:hover {
-  text-decoration: underline;
-  color: #ffd180;
-  background-color: inherit;
 }
 
 .footer-navigation-bottom a:active {
-  text-decoration: underline;
   color: #998a6e;
-  background-color: inherit;
+}
+
+.contact-footer address {
+  font-style: normal;
 }
 
 .contact-footer a {
-  color:inherit;
-  background-color: inherit;
+  color: inherit;
 }
 
 .main-footer .container {
   font-size: 16px;
   line-height: 18px;
   background-color: #293449;
-  color:inherit;
 }
 
 .footer-social ul {
@@ -281,42 +252,37 @@ a {
 
 .footer-social a {
   color: inherit;
-  background-color: inherit;
 }
 
 .dev-feedback a,
 .dev-copyright a {
   color: #ffd180;
-  background-color: inherit;
 }
 
 .dev-feedback a:hover,
 .dev-copyright a:hover {
-  color: #ffd180;
-  background-color: inherit;
   text-decoration: underline;
 }
 
 .dev-feedback a:active,
 .dev-copyright a:active {
   color: #ee3643;
-  background-color: inherit;
   text-decoration: underline;
 }
 
 .breadcrumbs {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
   list-style: none;
 }
 
 .breadcrumbs a {
-  text-transform: uppercase;
   color: inherit;
-  background-color: inherit;
-  line-height: 18px;
 }
 
 .catalog-title {
-  font-family: "Cuprum", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
@@ -330,6 +296,7 @@ a {
 }
 
 .catalog-filter {
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -337,14 +304,12 @@ a {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-
   background-color: #f7f3ec;
-  color: inherit;
+
 }
 
 .catalog-filter legend {
   font-weight: 700;
-  font-size: 17px;
   line-height: 30px;
 
 }
@@ -360,11 +325,12 @@ a {
 
 .catalog-filter .btn {
   text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
 
-  background-color: #ffffff;
-  color: inherit;
+  background-color: inherit;
 }
 
 .catalog-sort ul {
@@ -374,41 +340,34 @@ a {
 .catalog-sort {
   text-transform: uppercase;
   background-color: #f7f3ec;
-  color: inherit;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .catalog-sort h3 {
-  font-size: 13px;
-  line-height: 18px;
   font-weight: 400;
+  font-size: 13px;
 }
 
 .catalog-sort a {
-  font-size: 13px;
-  line-height: 18px;
   border-bottom: 1px dotted #ee3643;
-
   color: #c5c5c5;
-  background-color: inherit;
 }
 
 .catalog-sort a:hover {
   border-bottom: 1px solid #ee3643;
-  color: inherit;
-  background-color: inherit;
 }
 
 .catalog-sort a:active {
   color: #ee3643;
-  background-color: inherit;
 }
 
 .catalog-sort .sort-active {
   color: #ee3643;
-  background-color: inherit;
 }
 
 .catalog-list {
+  font-family: "PT Sans", Arial, sans-serif;
   list-style: none;
 }
 
@@ -426,7 +385,6 @@ a {
 
 .catalog-item .old-price {
   color:#999999;
-  background-color: inherit;
   text-decoration: line-through;
 }
 
@@ -436,12 +394,9 @@ a {
 }
 
 .catalog-item .btn {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-
   text-align: center;
-
   vertical-align: middle;
   text-transform: uppercase;
 }
@@ -454,14 +409,12 @@ a {
 }
 
 .catalog-item .btn-addcart:hover {
-  color: #ffffff;
   background-color: #5fbb2d;
   border: 3px solid #367315;
   border-radius: 2px;
 }
 
 .catalog-item .btn-addcart:active {
-  color: #ffffff;
   background-color: #518534;
   border: 3px solid #367315;
   border-radius: 2px;
@@ -475,17 +428,12 @@ a {
 }
 
 .catalog-item .btn-addbookmarks:hover {
-  color: #32425c;
-  background-color: inherit;
   border: 3px solid #32425c;
-  border-radius: 2px;
 }
 
 .catalog-item .btn-addbookmarks:active {
   color: #c1c6ce;
-  background-color: inherit;
   border: 3px solid #c1c6ce;
-  border-radius: 2px;
 }
 
 .doyouknow {
@@ -494,9 +442,14 @@ a {
 }
 
 .doyouknow h3 {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.doyouknow p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
 }
