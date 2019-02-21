@@ -29,8 +29,6 @@ a {
 }
 
 .header-top {
-  width: 100%;
-
   color: #ffffff;
   background-color: #293449;
 
@@ -40,8 +38,6 @@ a {
 .header-top .container {
   display: flex;
   justify-content: space-between;
-
-  background-color: transparent;
 }
 
 .logo-header {
@@ -198,12 +194,10 @@ a {
 
 .site-navigation {
   display: flex;
-  align-items: stretch;
   justify-content: space-around;
 
   padding:0;
 
-  list-style: none;
   list-style: none;
 
   color: #ffffff;
@@ -334,7 +328,6 @@ a {
 }
 
 .main-footer .footer-bottom {
-  width: 100%;
   padding-top: 40px;
 
   background-color: #293449;
@@ -519,6 +512,7 @@ a {
   justify-content: space-between;
 
   list-style: none;
+  padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
 }
