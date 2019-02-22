@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
   </head>
   <body class="inner-page">
     <header class="main-header">
@@ -16,17 +15,15 @@
           <a href="index.html" class="logo logo-header">
             <img src="img/logo.png" width="110" height="18" alt="Логотип Техномарт">
           </a>
-          <div class="search">
-            <form action="https://echo.htmlacademy.ru" method="get">
-              <label for="search-text">поиск</label>
+            <form class="search" action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="search-text">поиск</label>
               <input id="search-text" name="search-text" type="search" placeholder="Поиск:">
-              <button type="submit">Найти</button>
+              <button type="submit"><span class="visually-hidden">Найти</span></button>
             </form>
-          </div>
           <nav>
             <ul class="user-navigation">
               <li><a class="bookmarks" href="bookmarks.html">Закладки: 0</a></li>
-              <li><a class="basket" href="basket.html">Корзина: 0</a></li>
+              <li><a class="basket activ" href="basket.html">Корзина: 10</a></li>
               <li><a class="order" href="order.html">Оформить заказ</a></li>
             </ul>
           </nav>
@@ -248,7 +245,7 @@
           <section class="contact-footer">
             <h2 class="visually-hidden">Контактная информация</h2>
             <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-            <a href="tel:+78125550555">7(812)555-05-55</a>
+            <a href="tel:+78125550555">+7(812)555-05-55</a>
           </section>
         </div>
         <section class="footer-navigation">
@@ -270,11 +267,11 @@
       </div>
       <div class="footer-bottom">
         <div class="container">
-          <p class="footer-copyright">© 2010–2017 Компания «Техномарт» Все права защищены</p>
+          <p class="footer-copyright">© 2010–2017 Компания «Техномарт»<br>Все права защищены</p>
           <ul class="footer-social">
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a class="social-button fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social-button insta" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
           </ul>
           <p class="dev-feedback">
             <b>Обратная связь:</b>
