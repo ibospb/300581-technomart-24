@@ -807,17 +807,61 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
+  display: flex;
   list-style: none;
-
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   text-transform: uppercase;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  margin-bottom: 25px;
+  margin-top: 23px;
+  padding-left: 55px;
 }
 
+.breadcrumbs li {
+  position: relative;
+  margin-right: 40px;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs li::before {
+  content: "";
+
+  position: absolute;
+  top:4px;
+  left: -25px;
+  color: #c5c5c5;
+
+  width: 8px;
+  height: 12px;
+  background-image: url("../img/icon-right.svg");
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs li:first-child::after {
+  content: "";
+
+  position: absolute;
+  left: -56px;
+  top:3px;
+  width: 14px;
+  height: 12px;
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+
+}
+
+
 .breadcrumbs a {
-  color: inherit;
+  color: #000000;
 }
 
 .catalog-title {
