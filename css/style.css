@@ -315,8 +315,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.user-menu-unlogged .btn,
-.user-menu-logged .btn {
+.top-user-menu .btn {
   display: block;
 
   padding: 12px 24px;
@@ -329,35 +328,34 @@ input[type="radio"].visually-hidden {
 }
 
 .top-user-menu {
+  position: relative;
+
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
 
+  width: 100%;
+  max-width: 300px;
   margin: 0;
   margin-bottom: 7px;
   padding: 0;
-
-  list-style: none;
-}
-
-.user-menu-logged .top-user-menu {
-  flex-direction: column;
-}
-
-.top-user-menu {
-  position: relative;
-
-  max-width: 300px;
 }
 
 .top-user-menu .login {
+  margin-left: 0;
   padding-left: 50px;
+}
+
+.top-user-menu .reg {
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .top-user-menu .login::before {
   position: absolute;
   top:14px;
   left: 14px;
+
   width: 20px;
   height: 17px;
 
@@ -384,10 +382,11 @@ input[type="radio"].visually-hidden {
 }
 
 .top-user-menu .user-name {
+  width: 100%;
   padding-left: 47px;
 }
 
-.top-user-menu .logout, .top-user-menu .logout:active {
+.top-user-menu .logout {
   position: absolute;
   top:14px;
   right:20px;
@@ -402,6 +401,10 @@ input[type="radio"].visually-hidden {
 
 .top-user-menu .logout:hover {
   background-image:  url("../img/icon-logout-blue.svg");
+}
+
+.top-user-menu .logout:active {
+  background-image: url("../img/icon-logout-grey.svg");
 }
 
 .top-user-menu .user-name::before {
@@ -1014,8 +1017,6 @@ input[type="radio"].visually-hidden {
 
 .catalog-item .wrapper {
   min-height: 50px;
-
-  outline: 1px solid green;
 }
 
 .catalog-item h4 {
@@ -1025,8 +1026,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 18px;
   padding-right: 30px;
   padding-left: 30px;
-
-  outline: 1px solid red;
 
   font-size: 18px;
   line-height: 20px;
@@ -1070,14 +1069,15 @@ input[type="radio"].visually-hidden {
 
   margin: 0;
 
-  outline: 1px solid green;
-
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
+
 }
 
 .catalog-item .old-price {
+  display: block;
+
   margin: 0;
   margin-bottom: 14px;
 
@@ -1087,6 +1087,9 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item .price {
+  margin-top: auto;
+  margin-bottom: 0;
+
   color: #ffffff;
   background-color: #ee3643;
 }
