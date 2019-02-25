@@ -1010,22 +1010,26 @@ input[type="radio"].visually-hidden {
 
   width: 220px;
   margin-bottom: 20px;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
 
   border: 1px solid #e5e5e5;
 }
 
 .catalog-item .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   min-height: 50px;
 }
 
 .catalog-item h4 {
-  align-self: center;
-
   margin: 0;
   margin-bottom: 18px;
   padding-right: 30px;
   padding-left: 30px;
+
+  text-align: center;
 
   font-size: 18px;
   line-height: 20px;
@@ -1046,6 +1050,10 @@ input[type="radio"].visually-hidden {
   position: absolute;
 
   display: none;
+}
+
+.catalog-item .flag-new {
+  margin: 0;
 }
 
 .catalog-item .flag-new::after {
@@ -1087,11 +1095,45 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item .price {
+  position: relative;
+
+  display: block;
+
   margin-top: auto;
   margin-bottom: 0;
+  padding: 10px 38px;
 
   color: #ffffff;
+  border-radius: 3px;
   background-color: #ee3643;
+}
+
+.catalog-item .price::after {
+  position: absolute;
+  top:0;
+  right: 0;
+
+  width: 0;
+  height: 0;
+
+  content: "";
+
+	border-top: 20px solid white;
+	border-left: 20px solid transparent;
+}
+
+.catalog-item .price::before {
+  position: absolute;
+  right: 0;
+  bottom:0;
+
+  width: 0;
+  height: 0;
+
+  content: "";
+
+  border-bottom: 20px solid white;
+  border-left: 20px solid transparent;
 }
 
 .catalog-item .btn {
