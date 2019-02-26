@@ -34,7 +34,7 @@
         <section class="contact-header">
           <h2 class="visually-hidden">Контактная информация</h2>
           <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          <a href="tel:+78125550555">+7(812)555-05-55</a>
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         </section>
         <section class="user-menu unlogged">
           <h2 class="visually-hidden">Авторизация</h2>
@@ -136,8 +136,8 @@
     <section class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
       <!-- форма обратной связи -->
-      <form class="feedback" action="https://echo.htmlacademy.ru" method="get">
-        <ul>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <ul class="feedback">
           <li class="feedback-name">
             <label for="name">Ваше имя:</label>
             <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
@@ -151,14 +151,16 @@
             <textarea name="text-feedback" id="text-feedback" placeholder="В свободной форме" required></textarea>
           </li>
         </ul>
-        <button type="submit" name="button">Отправить</button>
+        <div class="wrapper">
+          <button class="btn submit-btn" type="submit" name="button">Отправить</button>
+        </div>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как нас найти</h2>
       <img src="img/map-big.jpg" width="940" height="466" alt="Мы на карте">
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
   </body>
 </html>
