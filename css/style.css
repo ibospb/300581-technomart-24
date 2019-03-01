@@ -242,7 +242,7 @@ input[type="radio"].visually-hidden {
 
   content: "";
 
-  opacity:0.3;
+  opacity: 0.3;
   background-image: url("../img/icon-cart.svg");
   background-repeat: no-repeat;
 }
@@ -1339,6 +1339,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 
   margin: 0;
+  margin-bottom: 32px;
   padding: 0;
   padding-top: 20px;
 
@@ -1549,6 +1550,67 @@ input[type="radio"].visually-hidden {
 
 .catalog-item .btn-addbookmarks:active {
   opacity: 0.3;
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pagination-item.hidden {
+  display: none;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 10px
+}
+
+.pagination-item a {
+  display: block;
+
+  box-sizing: border-box;
+  min-width: 38px;
+  min-height: 38px;
+  margin-bottom: 10px;
+  padding: 9px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+  border: 1px solid rgba(189,198,202, 0.4);
+  border-radius: 3px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.pagination-item.prev a, .pagination-item.next a {
+  padding-right: 31px;
+  padding-left: 31px;
+}
+
+.pagination-item:not(.current) a:hover {
+  border: 1px solid rgba(189,198,202, 1);
+}
+
+.pagination-item:not(.current) a:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-item.current a {
+  color: #ffffff;
+  border: 1px solid #ee3643;
+  background-color: #ee3643;
+
 }
 
 .doyouknow {
