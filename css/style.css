@@ -1485,6 +1485,10 @@ input[type="radio"].visually-hidden {
   visibility:visible;
 }
 
+.catalog-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
 .catalog-item .btn {
   display: block;
 
@@ -1799,4 +1803,95 @@ input[type="radio"].visually-hidden {
 .modal-addcart .continue-btn {
   color: #000000;
   background-color: #ffffff;
+}
+
+/* Доп задание */
+
+
+.popular-vendors {
+  margin-bottom: 65px;
+}
+
+.popular-goods .catalog-list {
+  margin-bottom: 0;
+}
+
+.popular-goods .wrapper,
+.popular-vendors .wrapper {
+  min-height: 89px;
+  background-color: #f9f5f0;
+/*  display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  padding-left: 30px;
+  padding-right: 24px;
+  outline: 1px solid red;
+
+}
+
+.popular-title {
+  font-size: 30px;
+  line-height: 30px;
+  padding: 29px 0 21px;
+  float: left;
+  margin: 0;
+
+  color: #32425c;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: auto;
+  text-transform: uppercase
+
+}
+
+.popular-goods .popular-btn,
+.popular-vendors .popular-btn {
+  display:inline-block;
+  float: right;
+  height: 38px;
+  margin-right: 0;
+  box-sizing: border-box;
+  padding: 10px 55px;
+  margin-top: 25px;
+}
+
+.popular-vendors .vendors-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.vendor-item a {
+    outline: 1px solid red;
+  display: flex;
+  width: 220px;
+  height: 145px;
+
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+.vendor-item img {
+  margin: auto;
+
+  outline: 1px solid green;
+}
+
+.vendor-item a:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.vendor-item a:active {
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+.service {
+  background-color: #f4f8f9;
+  min-height: 522px;
 }
