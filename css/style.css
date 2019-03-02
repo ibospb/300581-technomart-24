@@ -49,6 +49,7 @@ input[type="radio"].visually-hidden {
   margin-right: 16px;
   padding: 12px 40px;
 
+  cursor: pointer;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
@@ -261,7 +262,8 @@ input[type="radio"].visually-hidden {
   background-color: #161d29;
 }
 
-.activ.basket {
+.activ.basket,
+.activ.bookmarks {
   background-color: #ee3643;
 }
 
@@ -1392,11 +1394,12 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-.catalog-item .flag-new::after {
+.catalog-item .flag-new::after,
+.tile-item.flag-new::after {
   position: absolute;
   z-index: 20;
-  top:-1px;
-  right: -1px;
+  top:0px;
+  right: 0px;
 
   width: 60px;
   height: 59px;
@@ -1405,6 +1408,11 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/flag-new.png") ;
   background-repeat: no-repeat;
+}
+
+.catalog-item .flag-new::after {
+  top: -1px;
+  right: -1px;
 }
 
 .catalog-item .old-price,
@@ -1417,6 +1425,11 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   line-height: 18px;
 
+}
+
+.catalog-item .price:hover,
+.catalog-item .old-price:hover {
+  cursor: pointer;
 }
 
 .catalog-item .old-price {
@@ -1819,28 +1832,29 @@ input[type="radio"].visually-hidden {
 .popular-goods .wrapper,
 .popular-vendors .wrapper {
   min-height: 89px;
-  background-color: #f9f5f0;
-/*  display: flex;
-  justify-content: space-between;
-  align-items: center; */
-  padding-left: 30px;
   padding-right: 24px;
-  outline: 1px solid red;
+  padding-left: 29px;
+
+  background-color: #f9f5f0;
 
 }
 
 .popular-title {
-  font-size: 30px;
-  line-height: 30px;
-  padding: 29px 0 21px;
+  display: inline-block;
   float: left;
+
   margin: 0;
+  margin-right: auto;
+  margin-left: 0;
+  padding: 30px 0 21px;
+
+  text-transform: uppercase;
 
   color: #32425c;
-  display: inline-block;
-  margin-left: 0;
-  margin-right: auto;
-  text-transform: uppercase
+
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
 
 }
 
@@ -1848,39 +1862,43 @@ input[type="radio"].visually-hidden {
 .popular-vendors .popular-btn {
   display:inline-block;
   float: right;
-  height: 38px;
-  margin-right: 0;
+
   box-sizing: border-box;
-  padding: 10px 55px;
+  min-width: 253px;
+  height: 38px;
   margin-top: 25px;
+  margin-right: 0;
+  padding: 11px 54px;
 }
 
 .popular-vendors .vendors-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
   padding-top: 20px;
+
+  list-style: none;
 }
 
 .vendor-item a {
-    outline: 1px solid red;
   display: flex;
-  width: 220px;
-  height: 145px;
 
   box-sizing: border-box;
-  border: 1px solid #e5e5e5;
+  width: 220px;
+  height: 145px;
   margin-bottom: 20px;
+
+  border: 1px solid #e5e5e5;
   background-color: #ffffff;
 }
 
 .vendor-item img {
   margin: auto;
 
-  outline: 1px solid green;
+
 }
 
 .vendor-item a:hover {
@@ -1892,6 +1910,151 @@ input[type="radio"].visually-hidden {
 }
 
 .service {
-  background-color: #f4f8f9;
   min-height: 522px;
+
+  background-color: #f4f8f9;
+}
+
+/* блок с плитками */
+
+.tiles {
+  width: 940px;
+  margin-top: 59px;
+  margin-bottom: 33px;
+}
+
+.tiles ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.tiles p {
+  margin: 0;
+}
+
+.tiles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tiles .tiles-list-left,
+.tiles .tiles-list-right {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tiles .tiles-list-left {
+  width: 620px;
+}
+
+.tiles .tiles-list-right {
+  width: 300px;
+}
+
+.tiles .tile-item {
+  position: relative;
+
+  width: 300px;
+  min-height: 123px;
+  margin-bottom: 20px;
+
+  background-color: #ffbf47;
+}
+
+.tiles .tile-item::before{
+  position: absolute;
+  top: 22px;
+  right: 30px;
+
+  width: 80px;
+  height: 80px;
+
+  content: "";
+
+  background-image: url("../img/icon-paint.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.tiles .slider {
+  width: 620px;
+  min-height: 266px;
+  margin-bottom: 20px;
+
+}
+
+.tile-item .title {
+  margin-top: 21px;
+  margin-bottom: 12px;
+  margin-left: 23px;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+
+}
+
+.tile-item .btn {
+  box-sizing: border-box;
+  min-width: 135px;
+  margin-left: 25px;
+  padding: 11px 20px 9px;
+
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.tile-item .btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tile-item .btn:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.tile-item.materials {
+  background-color: #ffbf47;
+}
+
+.tile-item.materials::before {
+  background-image: url("../img/icon-paint.svg");
+}
+
+
+.tile-item.tool {
+  background-color: #3bbce3;
+}
+
+.tile-item.tool::before {
+  background-image: url("../img/icon-drill.svg");
+}
+
+.tile-item.equipment {
+  background-color: #dc91d8;
+}
+
+.tile-item.equipment::before {
+  background-image: url("../img/icon-tractor.svg");
+}
+
+.tile-item.discount {
+  background-color: #8ed78f;
+}
+
+.tile-item.discount::before {
+  background-image: url("../img/icon-shopping_cart.svg");
+}
+
+.tile-item.delivery {
+  background-color: #ffc047;
+}
+
+.tile-item.delivery::before {
+  background-image: url("../img/icon-delivery.svg");
 }
