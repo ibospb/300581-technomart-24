@@ -5,7 +5,7 @@
     <title>Интернет магазин «Техномарт»</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="inner-page">
     <header class="main-header">
@@ -74,8 +74,11 @@
               <fieldset class="price-range">
                 <legend>Цена:</legend>
                 <div class="range-wrapper">
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+                  <div class="scale">
+                    <div class="bar"></div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
                 </div>
                 <div class="price-wrapper">
                   <label for="price-min" class="visually-hidden">от </label>
@@ -308,5 +311,6 @@
       </div>
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
+    <script src="js/js.min.js"></script>
   </body>
 </html>

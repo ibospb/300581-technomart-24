@@ -5,7 +5,7 @@
     <title>Интернет магазин «Техномарт»</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -14,11 +14,11 @@
           <a class="logo logo-header">
             <img src="img/logo.svg" width="110" height="18" alt="Логотип Техномарт">
           </a>
-            <form class="search" action="https://echo.htmlacademy.ru" method="get">
-              <label class="visually-hidden" for="search-text">поиск</label>
-              <input id="search-text" name="search-text" type="search" placeholder="Поиск:">
-              <button type="submit"><span class="visually-hidden">Найти</span></button>
-            </form>
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search-text">поиск</label>
+            <input id="search-text" name="search-text" type="search" placeholder="Поиск:">
+            <button type="submit"><span class="visually-hidden">Найти</span></button>
+          </form>
           <nav>
             <ul class="user-navigation">
               <li><a class="bookmarks" href="bookmarks.html">Закладки: 0</a></li>
@@ -70,18 +70,20 @@
               <a class="btn" href="#">На все случаи</a>
             </li>
             <li class="slider">
-              <ul>
-                <li class="slider-item">
+              <ul class="slider-list">
+                <li class="slider-item perforators">
                   <p class="title">Перфораторы</p>
                   <p class="info">Настоящие мужские игрушки</p>
                   <a class="btn" href="catalog.html">Открыть каталог</a>
                 </li>
-                <li class="slider-item">
+                <li class="slider-item drills visually-hidden">
                   <p class="title">Дрели</p>
                   <p class="info">Соседям на радость!</p>
                   <a class="btn" href="catalog.html">Открыть каталог</a>
                 </li>
               </ul>
+              <button class="prev"><span class="visually-hidden">Назад</span></button>
+              <button class="next"><span class="visually-hidden">Вперед</span></button>
             </li>
           </ul>
           <ul class="tiles-list-right">
@@ -157,52 +159,80 @@
           <ul class="vendors-list">
             <li class="vendor-item">
               <a href="#">
-              <img src="img/vendor-bosch.png" width="126" height="37" alt="Логотип фирмы Bosch">
+                <img src="img/vendor-bosch.png" width="126" height="37" alt="Логотип фирмы Bosch">
               </a>
             </li>
             <li class="vendor-item">
               <a href="#">
-              <img src="img/vendor-makita.png" width="123" height="40" alt="Логотип фирмы Makita">
+                <img src="img/vendor-makita.png" width="123" height="40" alt="Логотип фирмы Makita">
               </a>
             </li>
             <li class="vendor-item">
               <a href="#">
-              <img src="img/vendor-dewalt.png" width="146" height="44" alt="Логотип фирмы Dewalt">
+                <img src="img/vendor-dewalt.png" width="146" height="44" alt="Логотип фирмы Dewalt">
               </a>
             </li>
             <li class="vendor-item">
               <a href="#">
-              <img src="img/vendor-interskol.png" width="200" height="88" alt="Логотип фирмы Интерскол">
+                <img src="img/vendor-interskol.png" width="200" height="88" alt="Логотип фирмы Интерскол">
               </a>
             </li>
             <li class="vendor-item">
               <a href="#">
-              <img src="img/vendor-hitachi.png" width="169" height="31" alt="Логотип фирмы Hitachi">
+                <img src="img/vendor-hitachi.png" width="169" height="31" alt="Логотип фирмы Hitachi">
               </a>
             </li>
             <li class="vendor-item">
               <a href="#">
-              <img src="img/vendor-lg.png" width="121" height="73" alt="Логотип фирмы LG">
+                <img src="img/vendor-lg.png" width="121" height="73" alt="Логотип фирмы LG">
               </a>
             </li>
             <li class="vendor-item">
               <a href="#">
-              <img src="img/vendor-aeg.png" width="151" height="96" alt="Логотип фирмы AEG">
+                <img src="img/vendor-aeg.png" width="151" height="96" alt="Логотип фирмы AEG">
               </a>
             </li>
             <li class="vendor-item">
               <a href="#">
-              <img src="img/vendor-metabo.png" width="204" height="69" alt="Логотип фирмы Metabo">
+                <img src="img/vendor-metabo.png" width="204" height="69" alt="Логотип фирмы Metabo">
               </a>
             </li>
           </ul>
         </section>
       </div>
+      <!-- Сервисы-->
       <section class="service">
         <div class="container">
-
-            <!-- Сервисы-->
-
+          <h2 class="service-title">Сервисы</h2>
+          <p class="service-description">Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="service-columns">
+            <ul class="service-list">
+              <li><a class="active" href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Кредит</a></li>
+            </ul>
+            <ul class="description-list">
+              <li class="description-item delivery">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+                <p>Ведь мы неплохо заработаем,
+                  поднимая его на ваш этаж!</p>
+              </li>
+              <li class="description-item warranty visually-hidden">
+                <h3>Гарантия</h3>
+                <p>Если купленный у нас товар поломается или заискрит,
+                  а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+                <p>Дом уж восстановите как-нибудь сами.</p>
+              </li>
+              <li class="description-item credit visually-hidden">
+                <h3>Кредит</h3>
+                <p>Залезть в долговую яму стало проще!</p>
+                <p>Кредитные консультанты придут вам на помощь.</p>
+                <a class="btn" href="#">Отправить заявку</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <div class="container">
@@ -210,8 +240,7 @@
           <section class="about-company">
             <h2>Компания «Техномарт»</h2>
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-            <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-    Техномарт работает со многими транспортными компаниями: </p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
             <ul class="logistic">
               <li>Деловые линии</li>
               <li>Автотрейдинг</li>
@@ -222,7 +251,7 @@
           <section class="map">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-            <a href="#">
+            <a href="https://goo.gl/maps/kEpQ8HTS5cC2" class="btn-map">
               <img src="img/map-small.jpg" width="300" height="160" alt="Мы на карте">
             </a>
             <a class="btn btn-feedback" href="#">Заблудились? Напишите нам!</a>
@@ -304,8 +333,9 @@
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <img src="img/map-big.jpg" width="940" height="466" alt="Мы на карте">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.299527610291!2d30.322432600651513!3d59.93879499729869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1553635362316" width="940" height="447" frameborder="0" style="border:0" allowfullscreen></iframe>
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
+    <script src="js/js.min.js"></script>
   </body>
 </html>
